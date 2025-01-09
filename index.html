@@ -5,23 +5,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: "Sarabun", serif;
+      font-weight: 500;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0%);
+      }
+
+      to {
+        transform: translateX(-10%);
+      }
+    }
+
+    .scrolling-banner {
+      animation: scroll 5s linear infinite;
+      animation-delay: 1s;
+
+    }
+  </style>
   <title>Document</title>
 </head>
 
 <body>
   <main>
-    <nav class=" flex px-12 py-6 text-white justify-between gap-8 items-center bg-black ">
-      <div class="n-left flex gap-8 items-center">
-        <a href="#">Home </a>
-        <a href="#"> Fashion </a>
-        <a href="#"> Gallery</a>
+    <nav class=" flex px-12 py-6 text-gray-200 justify-between gap-8 items-center bg-zinc-900 ">
+      <div class="n-left flex gap-8 items-center text-m font-medium bg-opacity-75">
+        <a class="hover:border-b-2 transition-600 border-gray-200" href="#">Home </a>
+        <a class="hover:border-b-2 transition-600 border-gray-200" href="#"> Fashion </a>
+        <a class="hover:border-b-2 transition-600 border-gray-200" href="#"> Gallery</a>
       </div>
-      <h1 class="text-2xl font-semibold"> new york</h1>
-      <div class="n-right flex gap-8 items-center ">
+      <h1 class="text-3xl font-bold uppercase"> Luxe fashion</h1>
+      <div class="n-right flex gap-8 items-center text-m font-medium ">
 
-        <a href="#"> contect </a>
-        <button class=" px-4 py-1 border rounded-2xl border-stone-100"> Sign in</button>
+        <a class="hover:border-b-2 transition-600 border-gray-200" href="#"> Contect </a>
+        <button
+          class=" px-4 py-1 border-2 rounded-2xl border-stone-100 hover:bg-gray-200 hover:text-zinc-900 hover:border-zinc-900">
+          Sign in</button>
       </div>
 
     </nav>
@@ -33,50 +63,297 @@
           <div class="left-sec px-16 text-center md:text-left">
             life is <br> a party
           </div>
-    
+
           <div class="relative flex items-center justify-center mx-22 top-28">
             <img class="h-[70vh] w-[28vw] border-2 border-zinc-900 rounded-full object-cover object-top"
-              src="https://images.unsplash.com/photo-1628246870028-b04f84bc6016?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              src="https://images.unsplash.com/photo-1628246870028-b04f84bc6016?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="">
           </div>
-    
+
           <div class="right-sec px-16 text-center md:text-right">
             do it <br> in style
           </div>
         </div>
       </div>
-    
+
       <div class=" w-full about-fashion px-6  py-6 ">
         <div class="flex justify-between items-center font-bold text-xl">
           <h2>WARDROBE STYLIST </h2>
           <h2> BASED IN NEW YORK </h2>
         </div>
-    
+
         <h1 class="text-center text-black font-medium pt-16 text-4xl mb-6">Express yourself through fashion</h1>
-        <p class="text-center">Fashion is your voice without speaking, your story without words. <br> Let every outfit reflect your passion, creativity, and individuality. Express <br> who you truly are, embracing bold colors, unique patterns, <br> and timeless elegance to make your mark effortlessly.</p>
+        <p class="text-center">Fashion is your voice without speaking, your story without words. <br> Let every outfit
+          reflect your passion, creativity, and individuality. Express <br> who you truly are, embracing bold colors,
+          unique patterns, <br> and timeless elegance to make your mark effortlessly.</p>
       </div>
     </header>
 
-    <div class="gallary px-6 py-4 h-[60vh] relative mb-6 flex 
+    <div class="gallary px-6 py-4 h-[60vh] relative  flex 
    justify-between gap-8 bg-stone-900 uppercase">
-     <img  class="h-72 object-cover absolute top-0 " src="https://images.unsplash.com/photo-1611756468499-e9a38034e3c2?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-     <h2 class="text-gray-100 text-2xl absolute top-20 left-56 font-bold ">bold <br> unique <br> timeless <br> daring</h2>
+      <img class="h-72 object-cover absolute top-0 "
+        src="https://images.unsplash.com/photo-1611756468499-e9a38034e3c2?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="">
+      <h2 class="text-gray-100 text-2xl absolute top-20 left-56 font-bold ">bold <br> unique <br> timeless <br> daring
+      </h2>
 
-     
-     <img class="h-72 w-64 object-cover absolute left-[25%]  object-bottom top-16" src="https://images.unsplash.com/photo-1664899303656-012eb78e2ca8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D" alt="">
-    
-     <h2 class="text-gray-100 text-5xl absolute top-[5%] left-[35%] font-bold ">gallary</h2>
 
-     <img class="h-72 w-64 object-cover absolute right-[32%] bottom-0" src="https://images.unsplash.com/photo-1722907893782-d016973d4dac?q=80&w=1571&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      <img class="h-72 w-64 object-cover absolute left-[25%]  object-bottom top-16"
+        src="https://images.unsplash.com/photo-1664899303656-012eb78e2ca8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D"
+        alt="">
 
-     <h2 class="text-gray-100 text-3xl absolute bottom-[5%] right-[12%] font-bold">Elevate Your Style <br> Define Your Identity</h2>
-     
-     <img class="h-72 w-64 object-cover absolute right-[2%] top-[0%]  object-top" src="https://images.unsplash.com/photo-1733748330558-0d56cdd25dce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ2fFM0TUtMQXNCQjc0fHxlbnwwfHx8fHw%3D" alt="">
+      <h2 class="text-gray-100 text-5xl absolute top-[5%] left-[35%] font-bold ">gallary</h2>
 
-     <button class="px-4 py-1 rounded-2xl border text-gray-100 border-stone-100 absolute right-2 bottom-4">view photos</button>
+      <img class="h-72 w-64 object-cover absolute right-[32%] bottom-0"
+        src="https://images.unsplash.com/photo-1722907893782-d016973d4dac?q=80&w=1571&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="">
+
+      <h2 class="text-gray-100 text-3xl absolute bottom-[5%] right-[12%] font-bold">Elevate Your Style <br> Define Your
+        Identity</h2>
+
+      <img class="h-72 w-64 object-cover absolute right-[2%] top-[0%]  object-top"
+        src="https://images.unsplash.com/photo-1733748330558-0d56cdd25dce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ2fFM0TUtMQXNCQjc0fHxlbnwwfHx8fHw%3D"
+        alt="">
+
+      <button
+        class="px-4 py-1 rounded-2xl border text-gray-100 border-stone-100 absolute right-2 hover:bg-black bottom-4">view
+        photos</button>
     </div>
-    
+
+
+
+
+    <div class="about-brand flex items-center justify-between mb-6 ">
+
+      <div class="brand-img flex relative h-[70vh] w-[25%] bg-[#1C1917]">
+
+
+
+        <img class="h-[65vh] w-[30vw] object-cover object-[10%_20%] rounded-2xl absolute top-6 left-[25%]"
+          src="https://images.unsplash.com/photo-1715408153387-b68a37650cb0?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Fashion Brand Image">
+      </div>
+
+
+      <div class="brand-text w-[65%] space-y-6 ">
+        <h1 class="text-4xl font-medium mb-4 rounded-2xl">
+          Your Ultimate Fashion Destination
+        </h1>
+        <p class="text-gray-600 leading-relaxed">
+          Welcome to [Your Fashion Brand Name], where fashion meets individuality. We are a brand that celebrates
+          self-expression, creativity, and timeless style. Our collections are designed to cater to your unique
+          personality, blending modern trends with classic elegance.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          From chic everyday wear to statement pieces, we pride ourselves on offering high-quality, ethically crafted
+          clothing and accessories that empower you to look and feel your best. At [Your Fashion Brand Name], we believe
+          fashion is more than what you wear—it's a way to tell your story.
+        </p>
+        <button
+          class=" border border-zinc-900 px-6 py-1 font-medium text-xl rounded-full hover:bg-zinc-900 hover:text-gray-200 ">Read
+          More</button>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-r from-black to-zinc-900 text-white py-10 mb-6">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Elevate Your Beauty Experience</h1>
+        <p class="text-lg md:text-xl mb-8">Discover luxury beauty products that redefine elegance.</p>
+        <a href="#"
+          class="bg-white text-zinc-900 hover:bg-black hover:text-gray-200 hover:border-2 hover:border-gray-200 px-6 py-3 rounded-full text-lg font-semibold">Shop
+          Now</a>
+      </div>
+    </div>
+
+    <div class="products overflow-x-hidden  h-[90vh] bg-zinc-900">
+
+      <div class="product-heading flex justify-between px-8 py-4  ">
+        <h1 class="text-4xl font-semibold text-gray-100 ">Shop the Luxe Collection</h1>
+        <button class=" px-4 py-1 font-medium text-gray-100 text-xl border-2 border-gray-200 rounded-full"> View All -->
+        </button>
+      </div>
+      <div class="flex w-fit gap-5 scrolling-banner scrollbar-hide py-4">
+
+        <div class="img1 h-[60vh] w-[20vw] text-center text-white">
+          <img src="https://i.pinimg.com/736x/9b/61/18/9b6118805343ddd6c33c24cc0b6f5760.jpg" alt="Luxury Skincare"
+            class="rounded-lg h-[50vh] w-full object-cover object-center mb-2 mb-2">
+          <h1 class="text-xl font-medium mb-2">Luminous Glow Serum</h1>
+
+          <h3 class="mb-2">Enriched with Vitamin C <br> for bright glowing skin</h3>
+          <button class="px-5 py-1 text-lg  bg-zinc-800 hover:bg-black text-white font-medium rounded-lg shadow-lg">Shop
+            Now</button>
+        </div>
+
+        <div class="img1 h-[60vh] w-[20vw] text-center text-white">
+          <img src="https://i.pinimg.com/736x/3d/5f/80/3d5f800774e011782db41377fd0db203.jpg" alt="Lipstick Set"
+            class="rounded-lg h-[50vh] w-full object-cover object-center mb-2">
+          <h1 class="text-xl font-medium mb-2">Velvet Matte Lipstick</h1>
+
+          <h3 class="mb-2">Long-lasting <br> smudge-proof formula</h3>
+          <button
+            class="px-5 py-1 text-lg  bg-zinc-800  hover:bg-black text-white font-medium rounded-lg shadow-lg">Shop
+            Now</button>
+        </div>
+
+        <div class="img1 h-[60vh] w-[20vw] text-center text-white">
+          <img src="https://i.pinimg.com/736x/04/3c/d1/043cd119e36e18ec6bd6ee4d825d36bb.jpg" alt="Fragrance Bottle"
+            class="rounded-lg h-[50vh] w-full object-cover object-center mb-2">
+          <h1 class="text-xl font-medium mb-2">Blissful Blossom Perfume</h1>
+
+          <h3 class="mb-2">Floral notes for <br> a signature scent</h3>
+          <button
+            class="px-5 py-1 text-lg  bg-zinc-800  hover:bg-black text-white font-medium rounded-lg shadow-lg">Shop
+            Now</button>
+        </div>
+
+        <div class="img1 h-[60vh] w-[20vw] text-center text-white">
+          <img src="https://i.pinimg.com/736x/e0/67/5e/e0675e4b1a558c4f2f091db1ba7f3f75.jpg" alt="Eye Shadow Palette"
+            class="rounded-lg h-[50vh] w-full object-cover object-center mb-2">
+          <h1 class="text-xl font-medium mb-2"> Eye-Catching Colors</h1>
+
+          <h3 class="text-m mb-2">12 stunning colors <br> to mix and match</h3>
+          <button
+            class="px-5 py-1 text-lg  bg-zinc-800  hover:bg-black text-white font-medium rounded-lg shadow-lg">Shop
+            Now</button>
+        </div>
+
+
+        <div class="img1 h-[60vh] w-[20vw] text-center text-white">
+          <img src="https://i.pinimg.com/736x/b2/89/69/b28969fdc27870da11d1617dd0b87258.jpg" alt="Hair Care Set"
+            class="rounded-lg h-[50vh] w-full object-cover object-center mb-2">
+          <h1 class="text-xl font-medium mb-2">Silky Smooth Hair Kit</h1>
+
+          <h3 class="mb-2">Complete hair care <br> for salon-like results</h3>
+          <button
+            class="px-5 py-1 text-lg  bg-zinc-800  hover:bg-black text-white font-medium rounded-lg shadow-lg">Shop
+            Now</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <section id="products" class="py-20">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-10">Our Exclusive Collection</h2>
+        <div class="flex items-center justify-between  gap-10">
+
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1593086997231-5006a292b79a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Luxury Skincare" class="w-full h-52 object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-semibold mb-2">Luminous Glow Serum</h3>
+              <p class="text-gray-600 mb-4">Radiance Redefined</p>
+              <a href="#" class="bg-zinc-900 text-white font-bold hover:bg-black px-4 py-2 rounded">View Product</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1591892026062-b2dd209ae259?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Lipstick Set" class="w-full h-52 object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-semibold mb-2">Velvet Matte Lipstick</h3>
+              <p class="text-gray-600 mb-4">Bold Colors, All-Day Comfort</p>
+              <a href="#" class="bg-zinc-900 text-white font-bold hover:bg-black px-4 py-2 rounded">View Product</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1592842125302-53494d164c90?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Fragrance Bottle" class="w-full h-52 object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-semibold mb-2">Blissful Blossom Perfume</h3>
+              <p class="text-gray-600 mb-4">Elegance in Every Spritz</p>
+              <a href="#" class="bg-zinc-900 text-white font-bold hover:bg-black px-4 py-2 rounded">View Product</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Fragrance Bottle" class="w-full h-52 object-cover  object-top">
+            <div class="p-5">
+              <h3 class="text-xl font-semibold mb-2">Blissful Blossom Perfume</h3>
+              <p class="text-gray-600 mb-4">Elegance in Every Spritz</p>
+              <a href="#" class="bg-zinc-900 text-white font-bold hover:bg-black px-4 py-2 rounded">View Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex px-8 justify-between items-center bg-[#F7F3F0]">
+      <div class="container mx-auto text-center text-zinc-900  ">
+        <h2 class="text-3xl font-bold mb-4">Join Our Luxury Beauty Community</h2>
+        <p class="text-lg mb-6">Sign up for exclusive offers and updates on new arrivals.</p>
+        <a href="#" class="bg-zinc-900 text-white hover:bg-black px-6 py-2 rounded-full text-lg font-semibold">Subscribe
+          Now</a>
+      </div>
+      <img class=" h-[50vh] w-[40vw] object-[10%_60%] "
+        src="https://images.unsplash.com/photo-1593418631527-ef599fba72df?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="">
+    </section>
+
+    <footer class="bg-zinc-900 text-gray-200 py-10">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-between gap-8">
+
+          <div>
+            <h3 class="text-lg font-bold mb-4">About Us</h3>
+            <p class="text-gray-400 mb-4">Discover the essence of luxury fashion with our exclusive collections <br> We
+              believe in timeless elegance and unparalleled quality.</p>
+            <a href="#" class=" hover:underline">Learn More</a>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+            <ul>
+              <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Shop</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Collections</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Lookbook</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+            </ul>
+          </div>
+
+
+          <div>
+            <h3 class="text-lg font-bold mb-4">Subscribe to Our Newsletter</h3>
+            <p class="text-gray-400 mb-4">Stay updated with the latest trends and exclusive offers.</p>
+
+            <input type="email" placeholder="Enter your email"
+              class="p-2 rounded-l-md border border-gray-600 bg-gray-800 text-white focus:outline-none ">
+            <button type="submit" class="bg-gray-800 hover:bg-black px-4 py-2 rounded-full">Subscribe</button>
+
+          </div>
+        </div>
+
+
+        <div class="mt-10  text-center">
+          <h3 class="text-2xl font-bold mb-6">Follow Us</h3>
+          <div class="flex justify-center space-x-4">
+            <i class="text-2xl cursor-pointer ri-facebook-circle-fill"></i>
+            <i class="text-2xl cursor-pointer ri-instagram-line"></i>
+            <i class="text-2xl cursor-pointer ri-twitter-x-line"></i>
+            <i class="text-2xl cursor-pointer ri-youtube-line"></i>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="bg-gray-800 py-4">
+        <div class="container mx-auto text-center">
+          <p class="text-gray-400 text-sm">© 2025 Luxury Fashion Brand. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
   </main>
 </body>
 
 </html>
-https://images.unsplash.com/photo-1729914280986-a21e9a837210?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8
